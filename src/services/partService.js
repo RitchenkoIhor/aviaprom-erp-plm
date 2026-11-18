@@ -4,7 +4,7 @@ class PartService {
   }
 
   validatePartStatus(part) {
-    if (!part.rfidTag || !part.certValid) throw new Error('Invalid RFID/Cert');
+    if (!part.cadRevisionApproved) throw new Error('CAD not approved');
     return true;
   }
 }
