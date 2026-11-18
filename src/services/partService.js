@@ -4,6 +4,7 @@ class PartService {
   }
 
   validatePartStatus(part) {
+    // RFID check in feature branch
     if (!part.rfidTag || !part.certValid) throw new Error('Invalid RFID/Cert');
     return true;
   }
