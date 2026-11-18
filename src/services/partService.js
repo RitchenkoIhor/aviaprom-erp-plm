@@ -4,6 +4,7 @@ class PartService {
   }
 
   validatePartStatus(part) {
+    // CAD check in main
     if (!part.cadRevisionApproved) throw new Error('CAD not approved');
     return true;
   }
